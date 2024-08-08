@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Inventory Manager</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5 text-center">Home Inventory Manager</h1>
+    <form id="itemForm" class="mb-4">
+      <div class="form-group">
+        <label for="itemName">Item Name</label>
+        <input type="text" id="itemName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="itemCategory">Category</label>
+        <select id="itemCategory" class="form-control" required>
+          <option value="Electronics">Electronics</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Appliances">Appliances</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Books">Books</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="purchaseDate">Purchase Date</label>
+        <input type="date" id="purchaseDate" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="warrantyPeriod">Warranty Period</label>
+        <input type="text" id="warrantyPeriod" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Add Item</button>
+    </form>
+    <input type="text" id="searchInput" class="form-control mb-4" placeholder="Search items...">
+    <ul id="itemList" class="list-group"></ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
